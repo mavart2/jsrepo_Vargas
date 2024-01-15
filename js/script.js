@@ -34,6 +34,15 @@ obj.forEach((item, index) => {
 // Muestra el contenido del tercer objeto en una alerta
 console.log(JSON.stringify(tercerObjeto));
 
+//Presentación al juego
+let respuesta = prompt('¿Como te llamas?');
+let apellido = prompt('¿y tu apellido?');
+let nombreCompleto = respuesta +" "+apellido;
+console.log("Bienvenido", nombreCompleto)
+console.log(respuesta +' ¡ACEPTA LAS CONDICIONES!');
+let confirmar = confirm('Confirma que aceptas las condiciones del juego de color');
+
+
 //variables
 let colorPrimario = ['amarillo', 'rojo', 'azul']
 alert('Los colores primarios son: '+ colorPrimario)
@@ -63,3 +72,4 @@ if (color.includes(croma1) && color.includes(croma2)) {
   } else {
     alert("El color ingresado no es válido.");
 }
+
